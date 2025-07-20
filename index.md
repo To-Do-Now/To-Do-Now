@@ -9,7 +9,7 @@
 
 ---
 
-## STEP 2  Generate one token
+## STEP 2  Generate one Personal Access Token (PAT)
 
 1. Open a new tab → <https://airtable.com/create/tokens>  
 2. **Create token** → name it *To-Do-Now*  
@@ -36,12 +36,54 @@ You’ll see **✅ Airtable linked!**
 
 ---
 
-## STEP 4  Add a task in the GPT, or paste your full To Do List.
+## STEP 4  Add a task in the GPT **or** paste your full To Do List.
 
-example:
+### ✏️  One task (example)
 ```
 Add "Buy groceries" – 30 min **Due-soft** once a week
 ```
+### 📋  Whole list
+```
+Pay rent – 5 min due 1st
+Vacuum – 20 min repeat weekly
+Paint fence
+```
+*What happens next?*  
+1. The GPT imports each line.  
+2. If a duration or priority is missing it **guesses** and asks follow-ups (max 3 questions).  
+3. You confirm, and the tasks are stored in your Airtable base.
+
+---
+
+## 5. How duration estimation works
+
+* If you supply a duration, the GPT uses it.  
+* If you leave it blank, the GPT calls an **Estimate Duration** tool under the hood. :contentReference[oaicite:0]{index=0}  
+  * High-confidence result → stored immediately.  
+  * Low confidence (< 50 %) → GPT asks you “About how many minutes will this take?”  
+* Either way, the final value is saved, so future suggestions are accurate.
+
+---
+
+## 6. Get your next task
+
+```
+I have 25 minutes
+```
+The GPT lists the best-fit task (or bundle) based on priority, deadline, and your available time.
+
+## 🗂️ 0. How priorities work 
+
+| Level | Label | Plain meaning |
+|------:|-------|---------------|
+| **1** | **Overdue-hard** | A hard deadline that’s already missed. Highest urgency. |
+| **2** | **Overdue-soft** | A “nice to have” deadline that’s already missed. |
+| **3** | **Due-hard** | A non-missable deadline in the future. |
+| **4** | **Due-soft** | A flexible deadline in the future. |
+| **5** | **If-free** | Responsible but non-urgent chores. |
+| **6** | **Would-love** | Fun or wish-list items you can skip if busy. |
+
+You can type either the **word** (e.g., `Due-soft`) or the **number** (`4`). The GPT will always show the word back to you.
 
 *(Priority words you can use later: Overdue-hard · Overdue-soft · Due-hard · Due-soft · If-free · Would-love)*  
 
