@@ -1,11 +1,11 @@
-# To Do Now GPT – Quick Start (~ 3 min)
+# To Do Now GPT – Quick Start
 
 ---
 
 ## STEP 1  Create your Airtable base (free)
 
 1. Click this template → <https://airtable.com/apph0Zh9pD0zbaqFT/shrFWh6cuQnOanNVS>  
-2. Click **Use this data** (top-right). Airtable will prompt you to sign up—email only, no card needed; your data.
+2. Click **Use this data** (top-right). Airtable will prompt you to sign up—email only, no card needed. Save the template as your base.
 
 ---
 
@@ -58,10 +58,10 @@ Paint fence
 ## 5. How duration estimation works
 
 * If you supply a duration, the GPT uses it.  
-* If you leave it blank, the GPT calls an **Estimate Duration** tool under the hood. :contentReference[oaicite:0]{index=0}  
+* If you leave it blank, the GPT calls an **Estimate Duration** tool under the hood. 
   * High-confidence result → stored immediately.  
   * Low confidence (< 50 %) → GPT asks you “About how many minutes will this take?”  
-* Either way, the final value is saved, so future suggestions are accurate.
+* Either way, the final value is saved, so future suggestions are usable.
 
 ---
 
@@ -72,7 +72,7 @@ I have 25 minutes
 ```
 The GPT lists the best-fit task (or bundle) based on priority, deadline, and your available time.
 
-## 🗂️ 0. How priorities work 
+## 🗂️ How priorities work 
 
 | Level | Label | Plain meaning |
 |------:|-------|---------------|
@@ -81,11 +81,10 @@ The GPT lists the best-fit task (or bundle) based on priority, deadline, and you
 | **3** | **Due-hard** | A non-missable deadline in the future. |
 | **4** | **Due-soft** | A flexible deadline in the future. |
 | **5** | **If-free** | Responsible but non-urgent chores. |
-| **6** | **Would-love** | Fun or wish-list items you can skip if busy. |
+| **6** | **Would-love** | Fun or wish-list items you can choose if you want. |
 
-You can type either the **word** (e.g., `Due-soft`) or the **number** (`4`). The GPT will always show the word back to you.
+To assign a priority, you can type either the **word** (e.g., `Due-soft`) or the **number** (`4`). The GPT will always show the word back to you.
 
-*(Priority words you can use later: Overdue-hard · Overdue-soft · Due-hard · Due-soft · If-free · Would-love)*  
 
 ---
 
