@@ -55,7 +55,7 @@ Paint fence
 
 ---
 
-## 5. How duration estimation works
+## How duration estimation works
 
 * If you supply a duration, the GPT uses it.  
 * If you leave it blank, the GPT calls an **Estimate Duration** tool under the hood. 
@@ -65,7 +65,7 @@ Paint fence
 
 ---
 
-## 6. Get your next task
+## STEP 6 Get your next task
 
 ```
 I have 25 minutes
@@ -88,7 +88,7 @@ To assign a priority, you can type either the **word** (e.g., `Due-soft`) or the
 
 ---
 
-## STEP 5  Ask for help anytime in the GPT
+## STEP 7  Ask for help anytime in the GPT
 
 ```
 Read quick-start guide
