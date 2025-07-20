@@ -63,15 +63,6 @@ Paint fence
   * Low confidence (< 50 %) → GPT asks you “About how many minutes will this take?”  
 * Either way, the final value is saved, so future suggestions are usable.
 
----
-
-## STEP 6 Get your next task
-
-```
-I have 25 minutes
-```
-The GPT lists the best-fit task (or bundle) based on priority, deadline, and your available time.
-
 ## 🗂️ How priorities work 
 
 | Level | Label | Plain meaning |
@@ -84,7 +75,14 @@ The GPT lists the best-fit task (or bundle) based on priority, deadline, and you
 | **6** | **Would-love** | Fun or wish-list items you can choose if you want. |
 
 To assign a priority, you can type either the **word** (e.g., `Due-soft`) or the **number** (`4`). The GPT will always show the word back to you.
+---
 
+## STEP 6 Get your next task
+
+```
+I have 25 minutes
+```
+The GPT lists the best-fit task (or bundle) based on priority, deadline, and your available time.
 
 ---
 
