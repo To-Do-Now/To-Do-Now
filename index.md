@@ -1,4 +1,4 @@
-# To Do Now GPT – Quick Start (≈ 3 min)
+# To Do Now GPT – Quick Start (~ 3 min)
 
 ---
 
