@@ -49,7 +49,9 @@ Add "Buy groceries" – 30 min **Due-soft** once a week
 ## STEP 5  Ask for help anytime in the To Do Now GPT
 
 ```
-Read quick-start guide, help, or tutorial
+Read quick-start guide
+help
+tutorial
 ```
 
 The GPT will show this page again inside the chat window.
