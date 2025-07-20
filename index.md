@@ -36,8 +36,9 @@ You’ll see **✅ Airtable linked!**
 
 ---
 
-## STEP 4  Add a task in the To Do Now GPT
+## STEP 4  Add a task in the GPT, or paste your full To Do List.
 
+example:
 ```
 Add "Buy groceries" – 30 min **Due-soft** once a week
 ```
@@ -46,7 +47,7 @@ Add "Buy groceries" – 30 min **Due-soft** once a week
 
 ---
 
-## STEP 5  Ask for help anytime in the To Do Now GPT
+## STEP 5  Ask for help anytime in the GPT
 
 ```
 Read quick-start guide
