@@ -1,25 +1,50 @@
-# 🚀 Set up *To‑Do‑Now* in 3 minutes
-
-**STEP 1 – Get your own Airtable copy**  
-1. Click 👉 https://airtable.com/apph0Zh9pD0zbaqFT/shrFWh6cuQnOanNVS 
-2. Press **“Copy base”** (top‑right). Airtable will ask you to sign‑up or sign‑in—use any email (no credit‑card).
+# To-Do-Now – Quick Start (≈ 3 min)
 
 ---
 
-**STEP 2 – Copy two little codes**
+## STEP 1  Create your Airtable base (free)
 
-| What | Where to click |
-|------|----------------|
-| **Base ID** | In your new base’s URL you’ll see `/appXXXXXXXXXXXXXX/…` – copy the `app…` part. |
-| **Personal Access Token** | 1. Open a new tab → <https://airtable.com/create/tokens>  <br>2. Click **“Create token”** → Name: *To‑Do‑Now*  <br>3. Scopes: `data.records:read`, `data.records:write`, `schema.bases:read`  <br>4. Under “Assign bases”, pick the base you just copied  <br>5. Click **Create token** → copy the `pat…` code shown. |
+1. Click this template → https://airtable.com/apph0Zh9pD0zbaqFT/shrFWh6cuQnOanNVS  
+2. Press **Copy base** (top-right). Airtable will prompt you to sign up—email only, no card needed.
 
 ---
 
-**STEP 3 – Paste both codes back in ChatGPT**
+## STEP 2  Generate one token
+
+1. Open a new tab → <https://airtable.com/create/tokens>  
+2. **Create token** → name it *To-Do-Now*  
+3. Tick three scopes: `data.records:read` · `data.records:write` · `schema.bases:read`  
+4. Under **Assign bases** pick the base you just copied → **Create token**.
+
+---
+
+## STEP 3  Tell the GPT your two codes
+
+Paste these two lines **exactly** (press Enter after each):
 
 ```
 BASE_ID: appXXXXXXXXXXXXXX
 TOKEN:   patXXXXXXXXXXXXXX
 ```
 
-ChatGPT will reply **“✅ Airtable linked!”** and you can start pasting your to‑do list.
+You’ll see **✅ Airtable linked!**
+
+---
+
+## STEP 4  Add a task
+
+```
+Add "Buy groceries" – 30 min **Due-soft**
+```
+
+*(Priority words you can use later: Overdue-hard · Overdue-soft · Due-hard · Due-soft · If-free · Would-love)*  
+
+---
+
+## STEP 5  Ask for help anytime
+
+```
+Read quick-start guide
+```
+
+The GPT will show this page again inside the chat window.
