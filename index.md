@@ -18,7 +18,7 @@
 
 ---
 
-## STEP 3 Tell the GPT your two codes do it can access your Airtable base
+## STEP 3 Tell the GPT your two codes so it can access your Airtable base
 
 | Code | Where to find it |
 |------|------------------|
