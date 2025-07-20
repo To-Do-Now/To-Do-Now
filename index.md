@@ -4,7 +4,7 @@
 
 ## STEP 1  Create your Airtable base (free)
 
-1. Click this template → https://airtable.com/apph0Zh9pD0zbaqFT/shrFWh6cuQnOanNVS  
+1. Click this template → <https://airtable.com/apph0Zh9pD0zbaqFT/shrFWh6cuQnOanNVS>  
 2. Press **Copy base** (top-right). Airtable will prompt you to sign up—email only, no card needed; your data.
 
 ---
