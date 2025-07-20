@@ -17,7 +17,7 @@
 
 **STEP 3 – Paste both codes back in ChatGPT**
 
-** BASE_ID: appXXXXXXXXXXXXXX
-** TOKEN: patXXXXXXXXXXXXXX
+** BASE_ID: appXXXXXXXXXXXXXX **
+** TOKEN: patXXXXXXXXXXXXXX **
 
 ChatGPT will reply **“✅ Airtable linked!”** and you can start pasting your to‑do list.
