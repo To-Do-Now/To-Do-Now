@@ -1,7 +1,7 @@
 # To‑Do‑Now ‑ Quick Start (≤ 5 min)
 
 1. **Make your own Airtable copy**  
-   - Click this template → https://airtable.com/appQzgmYPmb30fpPR/shrHD0N9UqjOQauma → **Copy base**  
+   - Click this template → [https://airtable.com/appQzgmYPmb30fpPR/shrHD0N9UqjOQauma](https://airtable.com/apph0Zh9pD0zbaqFT/shrFWh6cuQnOanNVS) → **Copy base**  
    - Open your new base.
 
 2. **Grab two values**  
