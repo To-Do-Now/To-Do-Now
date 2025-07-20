@@ -1,7 +1,7 @@
 # 🚀 Set up *To‑Do‑Now* in 3 minutes
 
 **STEP 1 – Get your own Airtable copy**  
-1. Click 👉 <YOUR_TEMPLATE_URL>  
+1. Click 👉 [<YOUR_TEMPLATE_URL>](https://airtable.com/apph0Zh9pD0zbaqFT/shrFWh6cuQnOanNVS)  
 2. Press **“Copy base”** (top‑right). Airtable will ask you to sign‑up or sign‑in—use any email (no credit‑card).
 
 ---
