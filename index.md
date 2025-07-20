@@ -54,4 +54,3 @@ help
 tutorial
 ```
 
-The GPT will show this page again inside the chat window.
