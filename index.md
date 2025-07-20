@@ -27,7 +27,7 @@
 
 Paste the two lines back in ChatGPT — press **Enter** after each:
 
-```
+```text
 BASE_ID: appXXXXXXXXXXXXXX
 TOKEN:   patXXXXXXXXXXXXXX
 ```
