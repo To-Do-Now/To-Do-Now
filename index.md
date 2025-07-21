@@ -50,7 +50,7 @@ Paint fence
 ```
 *What happens next?*  
 1. The GPT imports each line.  
-2. If a duration or priority is missing it can **guess** and asks follow-ups (max 3 questions).  
+2. If a duration or priority is missing it can **guess** and asks follow-ups.  
 3. You confirm, and the tasks are stored in your Airtable base.
 
 ## How duration estimation works
