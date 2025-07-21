@@ -53,8 +53,6 @@ Paint fence
 2. If a duration or priority is missing it can **guess** and asks follow-ups (max 3 questions).  
 3. You confirm, and the tasks are stored in your Airtable base.
 
----
-
 ## How duration estimation works
 
 * If you supply a duration, the GPT uses it.  
@@ -78,7 +76,7 @@ To assign a priority, you can type either the **word** (e.g., `Due-soft`) or the
 
 ---
 
-## STEP 6 Get your next task
+## STEP 5 Get your next task
 
 ```
 I have 25 minutes
@@ -87,7 +85,7 @@ The GPT lists the best-fit task (or bundle) based on priority, deadline, and you
 
 ---
 
-## STEP 7  Ask for help anytime in the GPT
+## STEP 6  Ask for help anytime in the GPT
 
 ```
 Read quick-start guide
