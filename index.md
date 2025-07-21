@@ -40,17 +40,17 @@ You’ll see **✅ Airtable linked!**
 
 ### ✏️  One task (example)
 ```
-Add "Buy groceries" – 30 min **Due-soft** once a week
+Add "Buy groceries" – 30 min Due-soft once a week
 ```
 ### 📋  Whole list
 ```
-Pay rent – 5 min due 1st
+Pay rent – 5 min due 1st of the month
 Vacuum – 20 min repeat weekly
 Paint fence
 ```
 *What happens next?*  
 1. The GPT imports each line.  
-2. If a duration or priority is missing it **guesses** and asks follow-ups (max 3 questions).  
+2. If a duration or priority is missing it can **guess** and asks follow-ups (max 3 questions).  
 3. You confirm, and the tasks are stored in your Airtable base.
 
 ---
