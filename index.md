@@ -42,7 +42,7 @@ You’ll see **✅ Airtable linked!**
 ```
 Add "Buy groceries" – 30 min Due-soft once a week
 ```
-### 📋  Whole list
+### 📋  Whole list (example)
 ```
 Pay rent – 5 min due 1st of the month
 Vacuum – 20 min repeat weekly
