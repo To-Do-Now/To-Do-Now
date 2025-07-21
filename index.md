@@ -22,7 +22,7 @@
 
 | Code | Where to find it |
 |------|------------------|
-| **Base ID** (`appXXXXXXXXXXXXXX`) | Open the base you just created. <br>Look at your browser’s address bar — you’ll see `https://airtable.com/**appXXXXXXXXXXXXXX**/tbl…` <br>Copy everything from the **a** in `app` up to the next slash. |
+| **Base ID** (`appXXXXXXXXXXXXXX`) | Open the base you just created. <br>Look at your browser’s address bar — you’ll see `https://airtable.com/appXXXXXXXXXXXXXX/tbl…` <br>Copy everything from the **a** in `app` up to the next slash. |
 | **Token** (`patXXXXXXXXXXXXXX`) | After you press **Create token** in STEP 2, Airtable shows a long string starting with **pat** — copy it. |
 
 Paste the two lines back in the GPT — press **Enter** after each:
