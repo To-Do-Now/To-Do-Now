@@ -74,6 +74,7 @@ Paint fence
 | **5** | **If-free** | Responsible but non-urgent chores. |
 | **6** | **Would-love** | Fun or wish-list items you can choose if you want. |
 
+
 To assign a priority, you can type either the **word** (e.g., `Due-soft`) or the **number** (`4`). The GPT will always show the word back to you.
 ---
 
