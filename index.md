@@ -2,30 +2,30 @@
 
 ---
 
-## STEP 1  Create your Airtable base (free)
+## STEP 1	Create your Airtable base (free)
 
 1. Click this template → <https://airtable.com/apph0Zh9pD0zbaqFT/shrFWh6cuQnOanNVS>  
 2. Click **Use this data** (top-right). Airtable will prompt you to sign up—email only, no card needed. Save the template as your base.
 
 ---
 
-## STEP 2  Generate one Personal Access Token (PAT)
+## STEP 2	Generate one Personal Access Token (PAT)
 
 1. Open a new tab → <https://airtable.com/create/tokens>  
 2. **Create token** → name it *To-Do-Now*  
 3. Under **Scopes**, add/select these three scopes for your token: `data.records:read` · `data.records:write` · `schema.bases:read`  
-4. Under **Access** pick the Airtable base you just created from the template and saved to your Airtable account → **Create token**. Copy the token and save it somewhere safe (it's only provided once).
+4. Under **Access** pick the Airtable base you just created from the template and saved to your Airtable account → **Create token**. Copy the token and save it somewhere safe right away (it's only provided by Airtable once).
 
 ---
 
-## STEP 3 Tell the GPT your two codes so it can access your Airtable base
+## STEP 3	Tell the To Do Now GPT your two codes so it can access your Airtable base
 
 | Code                              | Where to find it                                             |
 | --------------------------------- | ------------------------------------------------------------ |
 | **Base ID** (`appXXXXXXXXXXXXXX`) | Open the base you just created. <br>Look at your browser’s address bar — you’ll see `https://airtable.com/appXXXXXXXXXXXXXX/tbl…` <br>Copy everything from the **a** in `app` up to the next slash. |
 | **Token** (`patXXXXXXXXXXXXXX`)   | After you pressed **Create token** in STEP 2, Airtable showed a long string starting with **pat** — you copied and saved it in STEP 2. |
 
-Paste the two lines back in the GPT — press **Enter** after each:
+Paste the two lines back in the To Do Now GPT — press **Enter** after each:
 
 ```text
 BASE_ID: appXXXXXXXXXXXXXX
@@ -36,7 +36,7 @@ You’ll see **✅ Airtable linked!**
 
 ---
 
-## STEP 4  Add a task in the GPT **or** paste your full To Do List.
+## STEP 4	Add a task **or** paste your full To Do List.
 
 ### ✏️  One task (example)
 
@@ -68,20 +68,20 @@ Paint fence
 
 ## 🗂️ How priorities work 
 
-| Level | Label            | Plain meaning                                           |
-| ----: | ---------------- | ------------------------------------------------------- |
-| **1** | **Overdue-hard** | A hard deadline that’s already missed. Highest urgency. |
-| **2** | **Overdue-soft** | A “nice to have” deadline that’s already missed.        |
-| **3** | **Due-hard**     | A non-missable deadline in the future.                  |
-| **4** | **Due-soft**     | A flexible deadline in the future.                      |
-| **5** | **If-free**      | Responsible but non-urgent chores.                      |
-| **6** | **Would-love**   | Fun or wish-list items you can choose if you want.      |
+| Level | Label            | Plain meaning                                                |
+| ----: | ---------------- | ------------------------------------------------------------ |
+| **1** | **Overdue-hard** | A hard deadline that’s already missed. Highest priority.     |
+| **2** | **Overdue-soft** | A “nice to have,” or flexible, deadline that’s already missed. |
+| **3** | **Due-hard**     | A hard deadline in the future.                               |
+| **4** | **Due-soft**     | A flexible deadline in the future.                           |
+| **5** | **If-free**      | Good for non-urgent, general To Dos.                         |
+| **6** | **Would-love**   | Fun or wish-list items.                                      |
 
-To assign a priority, you can type either the **word** (e.g., `Due-soft`) or the **number** (`4`). The GPT will always show the word back to you.
+To assign a priority, you can type either the **word** (e.g., `Due-soft`) or the **number** (`4`). The GPT will show the word back to you.
 
 ---
 
-## STEP 5 Get your next task
+## STEP 5	Get your next task
 
 ```
 I have 25 minutes
@@ -91,11 +91,29 @@ The GPT lists the best-fit task (or bundle) based on priority, deadline, and you
 
 ---
 
-## STEP 6  Ask for help anytime in the GPT
+## STEP 6	Ask for help anytime
+
+You can type any of:
 
 ```
 Read quick-start guide
+```
+
+```
 help
+```
+
+```
 tutorial
 ```
+
+---
+
+✅ You're in control 
+
+- Your tasks stay in YOUR personal Airtable base 
+- Only you can access your data
+- You can disconnect anytime by revoking your Airtable token
+- The To Do Now GPT simply connect you to your own task storage database
+- By using this tool, you acknowledge that you control your own data storage
 
