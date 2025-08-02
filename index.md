@@ -5,7 +5,9 @@
 ## STEP 1	Create your Airtable base (free)
 
 1. Click this template → <https://airtable.com/apph0Zh9pD0zbaqFT/shrFWh6cuQnOanNVS>  
-2. Click **Use this data** (top-right). Airtable will prompt you to sign up—email only, no card needed. Save the template as your base.
+2. Click **Use this data** (blue button, top-right)
+3. Sign up with just your email (no credit card)
+4. Give your base a name and click **Create base**
 
 ---
 
@@ -13,71 +15,54 @@
 
 1. Open a new tab → <https://airtable.com/create/tokens>  
 2. **Create token** → name it *To-Do-Now*  
-3. Under **Scopes**, add/select these three scopes for your token: `data.records:read` · `data.records:write` · `schema.bases:read`  
-4. Under **Access** pick the Airtable base you just created from the template and saved to your Airtable account → **Create token**. Copy the token and save it somewhere safe right away (it's only provided by Airtable once).
+3. Under **Scopes**, click **+ Add a scope** and check these 3 boxes:
+   ☐ data.records:read
+   ☐ data.records:write  
+   ☐ schema.bases:read
+4. Under **Access** pick the base you just created → **Create token**
+5. Copy the token immediately (you only see it once!)
 
 ---
 
-## STEP 3	Tell the To Do Now GPT your two codes so it can access your Airtable base
+## STEP 3	Tell the To Do Now GPT your two codes
 
-| Code                              | Where to find it                                             |
-| --------------------------------- | ------------------------------------------------------------ |
-| **Base ID** (`appXXXXXXXXXXXXXX`) | Open the base you just created. <br>Look at your browser’s address bar — you’ll see `https://airtable.com/appXXXXXXXXXXXXXX/tbl…` <br>Copy everything from the **a** in `app` up to the next slash. |
-| **Token** (`patXXXXXXXXXXXXXX`)   | After you pressed **Create token** in STEP 2, Airtable showed a long string starting with **pat** — you copied and saved it in STEP 2. |
+| Code        | Where to find it                                             |
+| ----------- | ------------------------------------------------------------ |
+| **Base ID** | Open your base. Look at the address bar: `https://airtable.com/appXXXXXXXXXXXXXX/tbl…` <br>Copy from **app** to the next slash. |
+| **Token**   | The long code starting with **pat** that you copied in STEP 2. |
 
-Paste the two lines back in the To Do Now GPT — press **Enter** after each:
+Paste both lines into the To Do Now GPT chat exactly like this:
 
 ```text
 BASE_ID: appXXXXXXXXXXXXXX
 TOKEN:   patXXXXXXXXXXXXXX
 ```
 
-You’ll see **✅ Airtable linked!**
+You'll see **✅ Airtable linked!**
 
 ---
 
-## STEP 4	Add a task **or** paste your full To Do List.
+## STEP 4	Add tasks
 
-### ✏️  One task (example)
-
-```
-Add "Buy groceries" – 30 min Due-soft once a week
-```
-
-### 📋  Whole list (example)
+### ✏️  One task
 
 ```
-Pay rent – 5 min due 1st of the month
-Vacuum – 20 min repeat weekly
+Add "Buy groceries" - 30 min Due-soft once a week
+```
+
+### 📋  Whole list
+
+```
+Pay rent - 5 min due 1st of the month
+Vacuum - 20 min repeat weekly
 Paint fence
 ```
 
-*What happens next?*  
+The GPT will:
 
-1. The GPT imports each line.  
-2. If a duration or priority is missing it can **estimate** and asks follow-ups.  
-3. You confirm, and the tasks are stored in your Airtable base.
-
-## How duration estimation works
-
-* If you supply a duration, the GPT uses it.  
-* If you leave it blank, the GPT calls an **Estimate Duration** tool under the hood. 
-  * High-confidence result → stored immediately.  
-  * Low confidence (< 50 %) → GPT asks you “About how many minutes will this take?”  
-* Either way, the final value is saved, so future suggestions are usable.
-
-## 🗂️ How priorities work 
-
-| Level | Label            | Plain meaning                                                |
-| ----: | ---------------- | ------------------------------------------------------------ |
-| **1** | **Overdue-hard** | A hard deadline that’s already missed. Highest priority.     |
-| **2** | **Overdue-soft** | A “nice to have,” or flexible, deadline that’s already missed. |
-| **3** | **Due-hard**     | A hard deadline in the future.                               |
-| **4** | **Due-soft**     | A flexible deadline in the future.                           |
-| **5** | **If-free**      | Good for non-urgent, general To Dos.                         |
-| **6** | **Would-love**   | Fun or wish-list items.                                      |
-
-To assign a priority, you can type either the **word** (e.g., `Due-soft`) or the **number** (`4`). The GPT will show the word back to you.
+1. Check each task for missing info (duration or priority)
+2. Show you any estimates it makes
+3. Wait for your OK before saving to Airtable
 
 ---
 
@@ -87,33 +72,118 @@ To assign a priority, you can type either the **word** (e.g., `Due-soft`) or the
 I have 25 minutes
 ```
 
-The GPT lists the best-fit task (or bundle) based on priority, deadline, and your available time.
+The GPT finds tasks that fit your time and priority.
+
+---
+
+## 📝 Common Commands
+
+**Managing tasks:**
+
+```
+done               Mark current task complete
+skip               Skip for today (reappears tomorrow)  
+delete Paint fence Delete a specific task
+list               Show all your tasks
+search 30 min      Find tasks by time, name, or priority
+```
+
+**Working with time:**
+
+```
+I have 45 minutes  Get task suggestions that fit
+I have 2 hours     Shows multiple options if available
+```
+
+**Quick adds:**
+
+```
+Add "Call mom" - 15 min Due-soft
+Add "Team meeting tomorrow at 2pm"
+```
+
+---
+
+## 🎯 Example Session
+
+```
+You: I have 30 minutes
+GPT: With 30 minutes, you could:
+     A. Call dentist (15 min) - Due-soft (4)
+     B. File receipts (20 min) - If-free (5)
+     
+     Reply: done, skip, or add task
+
+You: done a
+GPT: ✅ Marked "Call dentist" as done.
+     
+     With 15 minutes left, you could:
+     B. File receipts (20 min) - If-free (5)
+     C. Water plants (10 min) - Would-love (6)
+```
+
+---
+
+## ⏱️ Duration Tips
+
+- Include time when adding tasks: `Paint fence - 2 hours`
+- If you skip it, the GPT will estimate and ask you to confirm
+- Durations help the GPT suggest tasks that fit your available time
+
+---
+
+## 🗂️ Priority Levels (1-6)
+
+**Urgent stuff** → 1 Overdue-hard | 2 Overdue-soft | 3 Due-hard | 4 Due-soft  
+**Regular stuff** → 5 If-free | 6 Would-love
+
+Just use the number (1-6) or the word (Due-soft). The GPT handles the rest.
+
+---
+
+## 💡 Good to Know
+
+**Import limits:** 
+
+- 25 tasks at a time (for easy confirmation)
+- 300 new tasks per day maximum
+
+**Recurring tasks:**
+
+- Use "repeat weekly" or "every 7 days"
+- Completed recurring tasks auto-create the next one
+
+**Task selection:**
+
+- When you get multiple options (A, B, C), reply with the letter
+- Type "skip" to see more options
+
+**Can't find something?**
+
+- Search is your friend: `search paint` or `find urgent tasks`
 
 ---
 
 ## STEP 6	Ask for help anytime
 
-You can type any of:
-
-```
-Read quick-start guide
-```
-
 ```
 help
 ```
 
-```
-tutorial
-```
+---
+
+## 🔧 Quick Fixes
+
+**"Airtable seems unavailable"** → Wait 60 seconds and try again  
+**Wrong duration on a task?** → Say `update Paint fence to 3 hours`  
+**Need to start over?** → Type `delete all` (requires confirmation)
 
 ---
 
-✅ You're in control 
+✅ **You're in control**
 
 - Your tasks stay in YOUR personal Airtable base 
 - Only you can access your data
 - You can disconnect anytime by revoking your Airtable token
-- The To Do Now GPT simply connect you to your own task storage database
-- By using this tool, you acknowledge that you control your own data storage
-
+- The To Do Now GPT simply connects you to your own task storage
+- By using this tool, you acknowledge that you control your own data
