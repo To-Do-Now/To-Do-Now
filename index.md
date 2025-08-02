@@ -5,7 +5,7 @@
 ## STEP 1	Create your Airtable base (free)
 
 1. Click this template → <https://airtable.com/apph0Zh9pD0zbaqFT/shrFWh6cuQnOanNVS>  
-2. Click **Use this data** (blue button, top-right)
+2. Click **Use this data** (top-right)
 3. Sign up with just your email (no credit card)
 4. Give your base a name and click **Create base**
 
@@ -47,22 +47,26 @@ You'll see **✅ Airtable linked!**
 ### ✏️  One task
 
 ```
-Add "Buy groceries" - 30 min Due-soft once a week
+Add "Call dentist" Due-soft
 ```
+
+*The GPT will estimate this takes about 15 minutes*
 
 ### 📋  Whole list
 
 ```
-Pay rent - 5 min due 1st of the month
-Vacuum - 20 min repeat weekly
+Pay rent Due-hard 1st
+Call dentist Due-soft
+Vacuum repeat weekly
 Paint fence
+Clean bathroom
 ```
 
 The GPT will:
 
-1. Check each task for missing info (duration or priority)
-2. Show you any estimates it makes
-3. Wait for your OK before saving to Airtable
+1. Automatically estimate task durations using AI
+2. Show you the time estimates for confirmation
+3. Save everything to your Airtable base
 
 ---
 
@@ -98,8 +102,10 @@ I have 2 hours     Shows multiple options if available
 **Quick adds:**
 
 ```
-Add "Call mom" - 15 min Due-soft
+Add "Call mom" Due-soft
+Add "File taxes" Due-hard April 15
 Add "Team meeting tomorrow at 2pm"
+Add "Paint bedroom" - 3 hours      (include duration if you want)
 ```
 
 ---
@@ -109,30 +115,37 @@ Add "Team meeting tomorrow at 2pm"
 ```
 You: I have 30 minutes
 GPT: With 30 minutes, you could:
-     A. Call dentist (15 min) - Due-soft (4)
-     B. File receipts (20 min) - If-free (5)
+     A. Pay bill (10 min) - Due-hard (3)
+     B. Call dentist (15 min) - Due-soft (4)
+     C. File receipts (20 min) - If-free (5)
      
      Reply: done, skip, or add task
 
 You: done a
-GPT: ✅ Marked "Call dentist" as done.
+GPT: ✅ Marked "Pay bill" as done.
      
-     With 15 minutes left, you could:
-     B. File receipts (20 min) - If-free (5)
-     C. Water plants (10 min) - Would-love (6)
+     With 20 minutes left, you could:
+     B. Call dentist (15 min) - Due-soft (4)
+     C. File receipts (20 min) - If-free (5)
 ```
 
 ---
 
-## ⏱️ Duration Tips
+## ⏱️ Smart Duration Estimates
 
-- Include time when adding tasks: `Paint fence - 2 hours`
-- If you skip it, the GPT will estimate and ask you to confirm
-- Durations help the GPT suggest tasks that fit your available time
+- The GPT can automatically estimate how long tasks will take 
+- Just paste your tasks and it figures out the timing
+- You can include your own duration if you prefer: `Paint fence - 2 hours`
+- Either way, durations help match tasks to your available time
 
 ---
 
 ## 🗂️ Priority Levels (1-6)
+
+**Hard vs Soft deadlines:**
+
+- **Hard** = firm deadline with real consequences (rent due, tax filing)
+- **Soft** = flexible target date you'd prefer to hit (call friend, paint room)
 
 **Urgent stuff** → 1 Overdue-hard | 2 Overdue-soft | 3 Due-hard | 4 Due-soft  
 **Regular stuff** → 5 If-free | 6 Would-love
@@ -142,6 +155,12 @@ Just use the number (1-6) or the word (Due-soft). The GPT handles the rest.
 ---
 
 ## 💡 Good to Know
+
+**AI-powered features:**
+
+- Automatically estimates task durations
+- Intelligently suggests tasks based on your available time
+- Learns common task patterns for better estimates
 
 **Import limits:** 
 
